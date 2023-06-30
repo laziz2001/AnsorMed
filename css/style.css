@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", "Arial", serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: #222;
+}
+
+/* Header */
+
+.site-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.site-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo {
+    display: block;
+}
+
+.site-logo img {
+    display: block;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.btn {
+    border: solid 2px #de2e54;
+    border-radius: 8px;
+    background-color: #de2e54;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 12px 24px;
+}
+
+/* Hero */
+.hero {
+    background-color: #0eb4c1;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-img {
+    padding-top: 29px;
+}
+
+.hero-content {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.hero-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.hero-text {
+    width: 440px;
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.service-blog {
+    width: 864px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-heading {
+    text-align: center;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 120px;
+    padding-bottom: 56px;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.frame-content {
+    align-items: center;
+    margin-left: 64px;
+    height: 149px;
+}
+
+.frame {
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+.frame-content img {
+    display: block;
+    align-items: center;
+    border-radius: 24px;
+    box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.30);
+    background-color: red;
+}
+
+
+.frame-content-title {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.frame-content-text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
