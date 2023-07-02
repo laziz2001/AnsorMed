@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: 2px dotted #ff7500;
+    outline-offset: 3px;
+}
+
 body {
     font-family: "Open Sans", "Arial", serif;
     font-weight: 400;
@@ -46,12 +51,29 @@ a {
     align-items: center;
 }
 
-.site-logo {
-    display: block;
+.site-logo-link {
+    display: flex;
+    justify-content: center;align-items: center;
 }
 
-.site-logo img {
-    display: block;
+.site-logo {
+    background-color: none;
+    margin-right: 16px;
+}
+
+.site-title {
+    color: #222;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.site-title:hover {
+    color:#de2e54;
+    opacity: 0.8;
+}
+
+.site-title:active {
+    opacity: 0.6;
 }
 
 .nav-list {
@@ -72,6 +94,15 @@ a {
     margin-right: 0;
 }
 
+.nav-link:hover {
+    color:#de2e54;
+    opacity: 0.8;
+}
+
+.nav-link:active {
+    opacity: 0.6;
+}
+
 .btn {
     border: solid 2px #de2e54;
     border-radius: 8px;
@@ -84,6 +115,21 @@ a {
     padding: 12px 24px;
 }
 
+.btn:hover {
+    background-color: #fff;
+    border: solid 2px #de2e54;
+    color:#de2e54;
+    opacity: 0.8;
+}
+
+.btn:active {
+    border: solid 2px #de2e54;
+    background-color: #de2e54;
+    color: #fff;
+    opacity: 0.6;
+}
+
+
 /* Hero */
 .hero {
     background-color: #0eb4c1;
@@ -93,10 +139,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.hero-img {
-    padding-top: 29px;
 }
 
 .hero-content {
@@ -117,6 +159,29 @@ a {
     color: #fff;
 }
 
+.hero-content .btn:hover {
+    border: solid 2px #de2e54;
+    background-color: #de2e54;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.hero-content .btn:active {
+    opacity: 0.6;
+}
+
+.hero-container img {
+    display: block;
+}
+
+.hero-img {
+    display: block;
+    padding-top: 29px;
+}
+
+
+/* Service */
+
 .service-blog {
     width: 864px;
     margin-left: auto;
@@ -134,8 +199,16 @@ a {
 
 .frame {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+}
+
+.frame img {
+    display: block;
+}
+
+.service-img {
+    display: block;
 }
 
 .frame-content {
@@ -149,14 +222,18 @@ a {
     margin-bottom: 80px;
 }
 
-.frame-content img {
+.frame img {
+    display: block;
+}
+
+
+.service-img {
     display: block;
     align-items: center;
     border-radius: 24px;
-    box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.30);
-    background-color: red;
+    border: solid 1px #ebe9e9;
+    box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3);
 }
-
 
 .frame-content-title {
     margin-top: 0;
@@ -166,4 +243,100 @@ a {
 .frame-content-text {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.service-blog .btn {
+    margin-left: 340px;
+}
+
+/* Footer */
+footer {
+    background-color: #0eb4c1;
+    padding-top: 64px;
+    margin-top: 120px;
+}
+
+.footer-heading {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-center .btn {
+    margin-top: 0;
+    margin-right: 40px;
+    margin-bottom: 64px;
+    background-color: #0eb4c1;
+    color: #fff;
+    border: solid 2px #fff;
+}
+
+.footer-center .btn:hover {
+    border: solid 2px #de2e54;
+    background-color: #de2e54;
+    color: #fff;
+}
+
+.footer-center .btn:active {
+    opacity: 0.6;
+}
+
+.footer-center .btn:last-child {
+    margin-right: 0;
+}
+
+.footer-bottom {
+    background-color: #222;
+    margin: 0;
+    margin-top: 64px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo-link {
+    display: flex;
+    justify-content: center;align-items: center;
+}
+
+.footer-logo {
+    background-color: none;
+    margin-right: 16px;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.footer-title:hover {
+    color:#de2e54;
+}
+
+.footer-title:active {
+    color: #fff;
+    opacity: 0.6;
+}
+
+.footer-nav .nav-link {
+    color: #fff;
+}
+
+.footer-nav .nav-link:hover {
+    color:#de2e54;
+}
+
+.footer-nav .nav-link:active {
+    color:#fff;
+    opacity: 0.6;
 }
