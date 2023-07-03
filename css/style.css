@@ -59,6 +59,7 @@ a {
 .site-logo {
     background-color: none;
     margin-right: 16px;
+    border-radius: 50%;
 }
 
 .site-title {
@@ -142,11 +143,11 @@ a {
 }
 
 .hero-content {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.hero-title {
+.hero-heading {
     margin-top: 0;
     margin-bottom: 16px;
 }
@@ -160,7 +161,7 @@ a {
 }
 
 .hero-content .btn:hover {
-    border: solid 2px #de2e54;
+    border: solid 2px transparent;
     background-color: #de2e54;
     color: #fff;
     opacity: 0.8;
@@ -176,7 +177,7 @@ a {
 
 .hero-img {
     display: block;
-    padding-top: 29px;
+    align-self: flex-end;
 }
 
 
@@ -305,12 +306,13 @@ footer {
 
 .footer-logo-link {
     display: flex;
-    justify-content: center;align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-logo {
-    background-color: none;
     margin-right: 16px;
+    border-radius: 50%;
 }
 
 .footer-title {
