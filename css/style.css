@@ -1,9 +1,22 @@
+:root {
+    --accent-color: #fff;
+    --secondary-color: #ff7500;
+    --heading-font: #222;
+    --bg-color: #de2e54;
+
+    --text-font: "Open Sans", "Arial", sans-serif;
+
+}
+
+
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 *:focus {
-    outline: 2px dotted #ff7500;
+    outline: 2px dotted var(--secondary-color);
     outline-offset: 3px;
 }
 
@@ -12,12 +25,12 @@ html {
 }
 
 body {
-    font-family: "Open Sans", "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--text-font);
     font-weight: 400;
     line-height: 1.5;
     font-size: 16px;
-    padding: 0;
-    margin: 0;
 }
 
 .container {
@@ -31,7 +44,7 @@ body {
 
 h2 {
     font-size: 36px;
-    color: #fff;
+    color: var(--accent-color);
     font-weight: 700;
     line-height: 1.2;
 }
@@ -39,7 +52,7 @@ h2 {
 a {
     text-decoration: none;
     list-style: none;
-    color: #222;
+    color: var(--heading-font);
 }
 
 /* Header */
@@ -57,7 +70,8 @@ a {
 
 .site-logo-link {
     display: flex;
-    justify-content: center;align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .site-logo {
@@ -67,13 +81,13 @@ a {
 }
 
 .site-title {
-    color: #222;
+    color: var(--heading-font);
     font-size: 24px;
     font-weight: 600;
 }
 
 .site-title:hover {
-    color:#de2e54;
+    color: var(--bg-color);
 }
 
 .site-title:active {
@@ -102,7 +116,7 @@ a {
 }
 
 .nav-link:hover {
-    color:#de2e54;
+    color:var(--bg-color);
 }
 
 .nav-link:active {
@@ -111,10 +125,10 @@ a {
 
 .btn {
     display: inline-block;
-    border: solid 2px #de2e54;
+    border: solid 2px var(--bg-color);
     border-radius: 8px;
-    background-color: #de2e54;
-    color: #fff;
+    background-color: var(--bg-color);
+    color: var(--accent-color);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 15px;
@@ -123,14 +137,14 @@ a {
 }
 
 .btn:hover {
-    background-color: #fff;
-    border: solid 2px #de2e54;
-    color:#de2e54;
+    background-color: var(--accent-color);
+    border: solid 2px var(--bg-color);
+    color:var(--bg-color);
 }
 
 .btn:active {
-    background-color: #de2e54;
-    color: #fff;
+    background-color: var(--bg-color);
+    color: var(--accent-color);
     opacity: 0.6;
 }
 
@@ -161,13 +175,13 @@ a {
     margin-top: 0;
     margin-bottom: 36px;
     font-size: 18px;
-    color: #fff;
+    color: var(--accent-color);
 }
 
 .hero-content .btn:hover {
     border: solid 2px transparent;
-    background-color: #de2e54;
-    color: #fff;
+    background-color: var(--bg-color);
+    color: var(--accent-color);
     opacity: 0.8;
 }
 
@@ -197,7 +211,7 @@ a {
 
 .service-heading {
     text-align: center;
-    color: #222;
+    color: var(--heading-font);
     margin-top: 0;
     margin-bottom: 56px;
 }
@@ -265,7 +279,7 @@ a {
     padding-top: 64px;
     padding-bottom: 64px;
     background-color: #0eb4c1;
-    color: #fff;
+    color: var(--accent-color);
 }
 
 .cta-heading {
@@ -285,15 +299,15 @@ a {
 }
 
 .btn-outline {
-    border-color: #fff;
+    border-color: var(--accent-color);
     background-color: transparent;
-    color: #fff;
+    color: var(--accent-color);
 }
 
 .btn-outline:hover {
     border-color: transparent;
-    background-color:#de2e54;
-    color: #fff;
+    background-color:var(--bg-color);
+    color: var(--accent-color);
 }
 
 
@@ -301,7 +315,7 @@ a {
 /* Footer */
 
 .footer {
-    background-color: #222;
+    background-color: var(--heading-font);
     margin: 0;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -325,29 +339,29 @@ a {
 }
 
 .footer-title {
-    color: #FFF;
+    color: var(--accent-color);
     font-size: 24px;
     font-weight: 600;
 }
 
 .footer-title:hover {
-    color:#de2e54;
+    color:var(--bg-color);
 }
 
 .footer-title:active {
-    color: #fff;
+    color: var(--accent-color);
     opacity: 0.6;
 }
 
 .footer-nav .nav-link {
-    color: #fff;
+    color: var(--accent-color);
 }
 
 .footer-nav .nav-link:hover {
-    color:#de2e54;
+    color:var(--bg-color);
 }
 
 .footer-nav .nav-link:active {
-    color:#fff;
+    color:var(--accent-color);
     opacity: 0.6;
 }
